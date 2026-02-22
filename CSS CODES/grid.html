@@ -1,0 +1,49 @@
+<style>
+    .main-div {
+        height: 100vh;
+        border: 10px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .child {
+        border: 3px solid blue;
+        background-color: orangered;
+    }
+
+    .ch5 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .ch8 {
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+
+    .ch1 {
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+
+    .ch3 {
+        grid-row: 3/4;
+        grid-column: 1/4;
+    }
+</style>
+
+<body>
+    <div class="main-div">
+        <div class="child ch1"><p>product1</p></div>
+        <div class="child ch2"><p>product2</p></div>
+        <div class="child ch3"><p>product3</p></div>
+        <div class="child"><p>product4</p></div>
+        <div class="child ch5"><p>product5</p></div>
+        <div class="child"><p>product6</p></div>
+        <div class="child"><p>product7</p></div>
+        <div class="child ch8"><p>product8</p></div>
+        <div class="child"><p>product9</p></div>
+    </div>
+</body>

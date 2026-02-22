@@ -1,0 +1,32 @@
+<style>
+
+    .main-div {
+        height: 300px; width: 100vw;
+        border: 4px solid blue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid red;
+        width: 100px; height: 100px;
+        
+    }
+
+    .ch1 {
+        flex-grow: 1;
+    }
+</style>
+<body>
+    <div class="main-div">
+    <div class="child ch1"><p>Video 1</p></div>
+    <div class="child"><p>Video 2</p></div>
+    <div class="child"><p>Video 3</p></div>
+    <div class="child"><p>Video 4</p></div>
+    </div>
+</body>
