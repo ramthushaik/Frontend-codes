@@ -1,0 +1,25 @@
+<head>
+    <title>Type Operators</title>
+</head>
+<body>
+    <script>
+        let a = 10;
+        let b = "hello";
+        let c = true;
+
+        console.log(typeof a); // Output: "number"
+        console.log(typeof b); // Output: "string"
+        console.log(typeof c); // Output: "boolean
+        console.log(typeof undefinedVariable); // Output: "undefined"
+        console.log(typeof null); // Output: "object" (this is a known quirk in JavaScript)
+        console.log(typeof {}); // Output: "object"
+        console.log(typeof []); // Output: "object" (arrays are also considered objects in JavaScript)
+        console.log(typeof function(){}); // Output: "function"
+          
+        let d = 10;
+        console.log(d instanceof Number); // Output: false (d is a primitive, not an object)
+        let e = new Number(10);
+        console.log(e instanceof Number); // Output: true (e is an object created with the Number constructor)
+        
+     </script>
+</body>
