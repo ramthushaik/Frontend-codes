@@ -1,0 +1,49 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different ways declaring functions</title>
+</head>
+<body>
+  <script>
+    // Function Declaration
+    function greet() {
+        console.log("Hello, World!");
+    }
+    greet(); // Output: Hello, World!
+
+    // Function Expression
+    const greetExpression = function() {
+        console.log("Hello, World from expression!");
+    };
+    greetExpression(); // Output: Hello, World from expression!
+
+    // Arrow Function
+    const greetArrow = () => {
+        console.log("Hello, World from arrow function!");
+    };
+    greetArrow(); // Output: Hello, World from arrow function!
+
+
+
+    function add(a, b) {
+        return a + b;
+    }
+
+    const res1 = function sub(x,y) {
+        return x - y;
+    }
+
+    const res2 =(m,n) => {
+        return m*n;
+    }
+
+    const res3 = (p,q) => p/q;
+
+    console.log(add(5, 3)); // Output: 8
+    console.log(res1(10, 4)); // Output: 6
+    console.log(res2(6, 7)); // Output: 42  
+    console.log(res3(20, 5)); // Output: 4
+
+  </script>
+</body>
